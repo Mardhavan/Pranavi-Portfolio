@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Github, MapPin } from "lucide-react";
+import { Mail, Linkedin, Github, MapPin, Phone } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -35,19 +35,31 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "mardhavan5320@gmail.com",
-      link: "mailto:mardhavan5320@gmail.com",
+      value: "Pranaviyadav57@gmail.com",
+      link: "mailto:Pranaviyadav57@gmail.com",
+    },
+    {
+      icon: Phone,
+      label: "Phone",
+      value: "+91 8688458486",
+      link: "tel:+918688458486",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "Mardhavan Abbathini",
-      link: "https://www.linkedin.com/in/mardhavan-abbathini-b34b59259",
+      value: "Pranavi Chinthakayala",
+      link: "https://www.linkedin.com/in/pranavi-chinthakayala",
+    },
+    {
+      icon: Github,
+      label: "GitHub",
+      value: "GitHub Profile",
+      link: "https://github.com/pranavi-chinthakayala",
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "Hyderabad, India",
+      value: "Siddipet, Telangana, India",
       link: null,
     },
   ];
@@ -73,7 +85,7 @@ const Contact = () => {
                   {info.link ? (
                     <a
                       href={info.link}
-                      target={info.icon === Mail ? "_self" : "_blank"}
+                      target={info.icon === Mail || info.icon === Phone ? "_self" : "_blank"}
                       rel="noopener noreferrer"
                       className="w-10 h-10 rounded-lg bg-gradient-hero flex items-center justify-center flex-shrink-0 hover:scale-110 transition-transform cursor-pointer"
                     >
@@ -89,7 +101,7 @@ const Contact = () => {
                     {info.link ? (
                       <a
                         href={info.link}
-                        target={info.icon === Mail ? "_self" : "_blank"}
+                        target={info.icon === Mail || info.icon === Phone ? "_self" : "_blank"}
                         rel="noopener noreferrer"
                         className="text-foreground hover:text-primary transition-colors"
                       >
