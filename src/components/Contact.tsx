@@ -42,7 +42,7 @@ const Contact = () => {
       icon: Linkedin,
       label: "LinkedIn",
       value: "Pranavi Chinthakayala",
-      link: "www.linkedin.com/in/pranavi-chinthakayala-480613243",
+      link: "https://www.linkedin.com/in/pranavi-chinthakayala-480613243",
     },
     {
       icon: Github,
