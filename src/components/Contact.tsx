@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Github, MapPin, Phone } from "lucide-react";
+import { Mail, Linkedin, Github, MapPin } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -35,26 +35,20 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "Pranaviyadav57@gmail.com",
-      link: "mailto:Pranaviyadav57@gmail.com",
-    },
-    {
-      icon: Phone,
-      label: "Phone",
-      value: "+91 8688458486",
-      link: "tel:+918688458486",
+      value: "pranaviyadav57@gmail.com",
+      link: "mailto:pranaviyadav57@gmail.com",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
       value: "Pranavi Chinthakayala",
-      link: "https://www.linkedin.com/in/pranavi-chinthakayala",
+      link: "https://www.linkedin.com/in/pranavi-chinthakayala-480613243/",
     },
     {
       icon: Github,
       label: "GitHub",
       value: "GitHub Profile",
-      link: "https://github.com/pranavi-chinthakayala",
+      link: "https://github.com/Pranavi8688",
     },
     {
       icon: MapPin,
@@ -85,7 +79,7 @@ const Contact = () => {
                   {info.link ? (
                     <a
                       href={info.link}
-                      target={info.icon === Mail || info.icon === Phone ? "_self" : "_blank"}
+                      target={info.icon === Mail ? "_self" : "_blank"}
                       rel="noopener noreferrer"
                       className="w-10 h-10 rounded-lg bg-gradient-hero flex items-center justify-center flex-shrink-0 hover:scale-110 transition-transform cursor-pointer"
                     >
@@ -101,7 +95,7 @@ const Contact = () => {
                     {info.link ? (
                       <a
                         href={info.link}
-                        target={info.icon === Mail || info.icon === Phone ? "_self" : "_blank"}
+                        target={info.icon === Mail ? "_self" : "_blank"}
                         rel="noopener noreferrer"
                         className="text-foreground hover:text-primary transition-colors"
                       >
