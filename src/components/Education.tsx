@@ -5,14 +5,25 @@ const Education = () => {
   const education = [
     {
       degree: "Bachelor of Technology",
-      field: "Electronics and Communication Engineering",
-      institution: "Jawaharlal Nehru Technological University, Hyderabad",
-      period: "2020 - 2024",
-      description: "Strong foundation in engineering principles with focus on communication systems and electronics.",
+      field: "Computer Science and Engineering",
+      institution: "Malla Reddy University, Hyderabad",
+      period: "Sep 2020 - May 2024",
+      description: "Strong foundation in computer science principles with focus on software development, cloud computing, and machine learning.",
       achievements: [
-        "Developed expertise in technical problem-solving and analytical thinking",
-        "Applied engineering concepts to business development strategies",
-        "Balanced academic excellence with practical business skills development",
+        "Developed expertise in AWS cloud infrastructure and DevOps practices",
+        "Applied machine learning to real-world projects in fraud detection and healthcare",
+        "Built full-stack applications with Python, SQL, and modern deployment pipelines",
+      ],
+    },
+    {
+      degree: "Board of Intermediate Education",
+      field: "MPC (Mathematics, Physics, Chemistry)",
+      institution: "Narayana Junior College, Hyderabad",
+      period: "Jun 2018 - Mar 2020",
+      description: "Completed intermediate education with focus on science and mathematics.",
+      achievements: [
+        "Built strong analytical and problem-solving skills",
+        "Developed foundation for engineering studies",
       ],
     },
   ];

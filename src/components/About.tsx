@@ -1,35 +1,35 @@
-import { Code, Target, Lightbulb, TrendingUp } from "lucide-react";
+import { Cloud, Server, Code, Database } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const About = () => {
   const highlights = [
     {
+      icon: Cloud,
+      title: "AWS Cloud",
+      description: "EC2, S3, Lambda, RDS, VPC, IAM, CloudWatch, ELB, Auto Scaling, CloudFormation",
+    },
+    {
+      icon: Server,
+      title: "DevOps & IaC",
+      description: "Terraform, Docker, Kubernetes, Jenkins, GitHub Actions, CI/CD Pipelines",
+    },
+    {
       icon: Code,
-      title: "CRM & Sales Tech",
-      description: "Expert in HubSpot, Salesforce, Apollo.io, and LinkedIn Sales Navigator",
+      title: "Programming",
+      description: "Python, SQL, HTML, CSS with automation scripting capabilities",
     },
     {
-      icon: Target,
-      title: "Results-Driven",
-      description: "35% improvement in pipeline efficiency and 22% increase in conversions",
-    },
-    {
-      icon: Lightbulb,
-      title: "Strategic Thinker",
-      description: "Data-driven approach to sales optimization and lead generation",
-    },
-    {
-      icon: TrendingUp,
-      title: "Revenue Growth",
-      description: "Secured contracts exceeding ₹15L through strategic partnerships",
+      icon: Database,
+      title: "Machine Learning",
+      description: "SVM, Decision Trees, TensorFlow, Model Deployment & Automation",
     },
   ];
 
   const stats = [
-    { value: "200+", label: "Qualified Leads/Quarter" },
-    { value: "35%", label: "Pipeline Growth" },
-    { value: "₹15L+", label: "Contracts Secured" },
-    { value: "25%", label: "Faster Onboarding" },
+    { value: "82%", label: "Fraud Detection Accuracy" },
+    { value: "78%", label: "ADHD Diagnostic Accuracy" },
+    { value: "3-Tier", label: "AWS Architecture" },
+    { value: "5+", label: "Certifications" },
   ];
 
   return (
@@ -58,11 +58,12 @@ const About = () => {
         <div className="mb-12">
           <Card className="p-6 md:p-8 bg-card/30 border-primary/10 backdrop-blur-sm hover-glow-card hover:shadow-glow transition-all">
             <p className="text-base md:text-lg leading-relaxed text-foreground/90">
-              As a Business Development Associate at Applywizz, I specialize in B2C sales, client acquisition, 
-              and account management. My expertise lies in leveraging CRM platforms and 
-              sales automation tools to efficiently manage sales pipelines and drive lead generation. 
-              I've successfully optimized outreach efforts, achieving a 35% improvement in reply rates and 
-              a 20% increase in operational efficiency.
+              Computer Science Graduate skilled in AWS Cloud, DevOps, Python, and SQL, with hands-on experience 
+              in deploying scalable infrastructures on AWS using Terraform, Docker, and Kubernetes. Proficient 
+              in CI/CD pipelines (Jenkins, GitHub Actions), Linux administration, and SQL database optimization. 
+              Applied Python and machine learning to real-world projects in fraud detection and healthcare analytics. 
+              Seeking roles as a Cloud Engineer, DevOps Engineer, or Python Developer to deliver automation-driven, 
+              secure, and reliable solutions.
             </p>
           </Card>
         </div>

@@ -26,49 +26,52 @@ const Skills = () => {
       }
     };
   }, []);
+
   const skillCategories = [
     {
-      category: "CRM & Outreach Platforms",
+      category: "Cloud & DevOps",
       skills: [
-        { name: "HubSpot CRM", level: 90 },
-        { name: "Salesforce", level: 85 },
-        { name: "Apollo.io", level: 85 },
-        { name: "LinkedIn Sales Navigator", level: 90 },
+        { name: "AWS (EC2, S3, Lambda, RDS, VPC, IAM)", level: 90 },
+        { name: "Terraform (IaC)", level: 85 },
+        { name: "Docker & Kubernetes", level: 85 },
+        { name: "Jenkins & GitHub Actions", level: 90 },
       ],
     },
     {
-      category: "Sales & Account Management",
+      category: "Programming & Scripting",
       skills: [
-        { name: "B2C Lead Generation", level: 90 },
-        { name: "Sales Pipeline Optimization", level: 85 },
-        { name: "Client Acquisition", level: 90 },
-        { name: "Account Retention", level: 85 },
+        { name: "Python", level: 90 },
+        { name: "SQL / MySQL", level: 85 },
+        { name: "HTML & CSS", level: 80 },
+        { name: "Automation Scripts", level: 85 },
       ],
     },
     {
-      category: "Market Research & Analytics",
+      category: "Machine Learning",
       skills: [
-        { name: "SimilarWeb", level: 80 },
-        { name: "SEMrush", level: 80 },
-        { name: "Power BI", level: 85 },
-        { name: "Google Analytics 4", level: 85 },
+        { name: "TensorFlow", level: 80 },
+        { name: "scikit-learn", level: 85 },
+        { name: "SVM & Decision Trees", level: 85 },
+        { name: "Model Deployment", level: 80 },
       ],
     },
     {
-      category: "Communication & Automation",
+      category: "Tools & Platforms",
       skills: [
-        { name: "Email Marketing (Lemlist, Mailchimp)", level: 90 },
-        { name: "Proposal Writing", level: 90 },
-        { name: "ROI Modeling", level: 85 },
-        { name: "Sales Automation (Zapier)", level: 80 },
+        { name: "Git & GitHub", level: 90 },
+        { name: "Linux Administration", level: 85 },
+        { name: "CloudWatch & Grafana", level: 80 },
+        { name: "Flask & Django", level: 80 },
       ],
     },
   ];
 
   const certifications = [
-    "Business Development Foundations – LinkedIn Learning",
-    "Sales Operations & Management – LinkedIn Learning",
-    "Google Analytics for Beginners – Google Analytics Academy",
+    "Data Analytics with Python - NPTEL",
+    "Python (Basics) - HackerRank",
+    "AWS Cloud Practitioner Essentials - Coursera",
+    "IBM SQL and Relational Databases - Coursera",
+    "Machine Learning Introduction for Everyone - Coursera",
   ];
 
   return (
