@@ -8,10 +8,14 @@ const Hero = () => {
     <section id="home" className="min-h-screen flex items-center justify-center px-4 md:px-8 lg:px-12 py-16 md:py-20 relative overflow-hidden">
       <FloatingParticles />
       <div className="w-full max-w-7xl relative z-10">
+        {/* Hi, I'm - visible on mobile above photo */}
+        <p className="text-sm md:text-base lg:text-lg text-center lg:hidden mb-4 animate-in fade-in slide-in-from-bottom duration-700" style={{ color: 'hsl(25, 95%, 53%)' }}>Hi, I'm</p>
+        
         <div className="flex flex-col-reverse lg:flex-row gap-8 md:gap-12 items-center">
           {/* Text Content - Left Side */}
           <div className="flex-1 space-y-3 md:space-y-4 animate-in fade-in slide-in-from-bottom duration-700 text-center lg:text-left">
-            <p className="text-sm md:text-base lg:text-lg" style={{ color: 'hsl(25, 95%, 53%)' }}>Hi, I'm</p>
+            {/* Hi, I'm - visible on desktop only */}
+            <p className="hidden lg:block text-sm md:text-base lg:text-lg" style={{ color: 'hsl(25, 95%, 53%)' }}>Hi, I'm</p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
               <span className="gradient-text font-extrabold">PRANAVI CHINTHAKAYALA</span>
             </h1>
