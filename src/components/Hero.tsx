@@ -9,23 +9,33 @@ const Hero = () => {
       <FloatingParticles />
       <div className="w-full max-w-7xl relative z-10">
         {/* Hi, I'm - visible on mobile above photo */}
-        <p className="text-sm md:text-base lg:text-lg text-center lg:hidden mb-4" style={{ color: 'hsl(25, 95%, 53%)' }}>Hi, I'm</p>
+        <p 
+          className="text-sm md:text-base lg:text-lg text-center lg:hidden mb-4 opacity-0 animate-[fadeSlideUp_0.6s_ease-out_0.1s_forwards]" 
+          style={{ color: 'hsl(25, 95%, 53%)' }}
+        >
+          Hi, I'm
+        </p>
         
         <div className="flex flex-col-reverse lg:flex-row gap-8 md:gap-12 items-center">
           {/* Text Content - Left Side */}
           <div className="flex-1 space-y-3 md:space-y-4 text-center lg:text-left">
             {/* Hi, I'm - visible on desktop only */}
-            <p className="hidden lg:block text-sm md:text-base lg:text-lg" style={{ color: 'hsl(25, 95%, 53%)' }}>Hi, I'm</p>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
+            <p 
+              className="hidden lg:block text-sm md:text-base lg:text-lg opacity-0 animate-[fadeSlideUp_0.6s_ease-out_0.1s_forwards]" 
+              style={{ color: 'hsl(25, 95%, 53%)' }}
+            >
+              Hi, I'm
+            </p>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight opacity-0 animate-[fadeSlideUp_0.6s_ease-out_0.2s_forwards]">
               <span className="gradient-text font-extrabold">PRANAVI CHINTHAKAYALA</span>
             </h1>
             
-            <p className="text-sm md:text-base lg:text-lg text-muted-foreground leading-relaxed max-w-xl pt-2">
+            <p className="text-sm md:text-base lg:text-lg text-muted-foreground leading-relaxed max-w-xl pt-2 opacity-0 animate-[fadeSlideUp_0.6s_ease-out_0.35s_forwards]">
               Computer Science Graduate skilled in AWS Cloud, DevOps, Python, and SQL. 
               Hands-on experience in deploying scalable infrastructures using Terraform, Docker, and Kubernetes. 
               Proficient in CI/CD pipelines, Linux administration, and machine learning applications.
             </p>
-            <div className="flex flex-wrap justify-center lg:justify-start gap-3 md:gap-4 pt-4 md:pt-6">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-3 md:gap-4 pt-4 md:pt-6 opacity-0 animate-[fadeSlideUp_0.6s_ease-out_0.5s_forwards]">
               <Button 
                 size="lg" 
                 className="group bg-gradient-to-r from-primary via-accent to-secondary text-white hover:shadow-glow hover:scale-105 transition-all duration-300 border-0 text-sm md:text-base"
@@ -46,7 +56,7 @@ const Hero = () => {
           </div>
 
           {/* Profile Photo - Right Side */}
-          <div className="flex-shrink-0 mt-4 lg:mt-0">
+          <div className="flex-shrink-0 mt-4 lg:mt-0 opacity-0 animate-[fadeScale_0.7s_ease-out_0.3s_forwards]">
             <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 xl:w-[420px] xl:h-[420px] animate-float">
               {/* Rotating gradient ring */}
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary via-accent to-secondary opacity-30 blur-2xl animate-glow-pulse" />
