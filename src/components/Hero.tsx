@@ -27,7 +27,9 @@ const Hero = () => {
               Hi, I'm
             </p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight opacity-0 animate-[fadeSlideUp_0.6s_ease-out_0.2s_forwards]">
-              <span className="gradient-text font-extrabold">PRANAVI CHINTHAKAYALA</span>
+              <span className="gradient-text font-extrabold">PRANAVI</span>
+              <br />
+              <span className="gradient-text font-extrabold">CHINTHAKAYALA</span>
             </h1>
             
             <p className="text-sm md:text-base lg:text-lg text-muted-foreground leading-relaxed max-w-xl pt-2 opacity-0 animate-[fadeSlideUp_0.6s_ease-out_0.35s_forwards]">
