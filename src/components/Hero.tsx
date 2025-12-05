@@ -4,35 +4,25 @@ import profilePhoto from "@/assets/profile-photo.png";
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center px-4 md:px-0 py-16 md:py-20 relative overflow-hidden">
-      <div className="w-full max-w-full md:px-8 lg:px-12 relative z-10">
-        <div className="flex flex-col gap-8 md:gap-12 items-center text-center">
-          {/* Profile Photo */}
-          <div className="animate-in fade-in slide-in-from-bottom duration-500">
-            <div className="relative w-40 h-40 md:w-52 md:h-52 rounded-full overflow-hidden border-4 border-primary/30 shadow-glow">
-              <img 
-                src={profilePhoto} 
-                alt="Pranavi Chinthakayala" 
-                className="w-full h-full object-cover object-top"
-              />
-            </div>
-          </div>
-
-          <div className="space-y-3 md:space-y-4 animate-in fade-in slide-in-from-bottom duration-700 w-full max-w-4xl">
+    <section id="home" className="min-h-screen flex items-center justify-center px-4 md:px-8 lg:px-12 py-16 md:py-20 relative overflow-hidden">
+      <div className="w-full max-w-7xl relative z-10">
+        <div className="flex flex-col lg:flex-row gap-8 md:gap-12 items-center">
+          {/* Text Content - Left Side */}
+          <div className="flex-1 space-y-3 md:space-y-4 animate-in fade-in slide-in-from-bottom duration-700 text-center lg:text-left">
             <p className="text-sm md:text-base lg:text-lg" style={{ color: 'hsl(25, 95%, 53%)' }}>Hi, I'm</p>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
               <span className="gradient-text font-extrabold">PRANAVI CHINTHAKAYALA</span>
             </h1>
             
-            <h2 className="text-lg md:text-xl lg:text-3xl text-foreground font-bold typing-animation inline-block">
+            <h2 className="text-lg md:text-xl lg:text-2xl xl:text-3xl text-foreground font-bold typing-animation inline-block">
               Cloud & DevOps Engineer
             </h2>
-            <p className="text-sm md:text-base lg:text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto pt-2">
+            <p className="text-sm md:text-base lg:text-lg text-muted-foreground leading-relaxed max-w-xl pt-2">
               Computer Science Graduate skilled in AWS Cloud, DevOps, Python, and SQL. 
               Hands-on experience in deploying scalable infrastructures using Terraform, Docker, and Kubernetes. 
               Proficient in CI/CD pipelines, Linux administration, and machine learning applications.
             </p>
-            <div className="flex flex-wrap justify-center gap-3 md:gap-4 pt-4 md:pt-6">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-3 md:gap-4 pt-4 md:pt-6">
               <Button 
                 size="lg" 
                 className="group bg-gradient-to-r from-primary via-accent to-secondary text-white hover:shadow-glow hover:scale-105 transition-all duration-300 border-0 text-sm md:text-base"
@@ -49,6 +39,24 @@ const Hero = () => {
                 <Download className="h-4 w-4 group-hover:animate-bounce" />
                 Download Resume
               </a>
+            </div>
+          </div>
+
+          {/* Profile Photo - Right Side */}
+          <div className="flex-shrink-0 animate-in fade-in slide-in-from-right duration-700 delay-300">
+            <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 xl:w-[420px] xl:h-[420px]">
+              {/* Outer glow ring */}
+              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 via-accent/10 to-secondary/20 blur-xl" />
+              {/* Border ring */}
+              <div className="absolute inset-0 rounded-full border-2 border-primary/30" />
+              {/* Photo container */}
+              <div className="absolute inset-2 rounded-full overflow-hidden border-4 border-primary/20">
+                <img 
+                  src={profilePhoto} 
+                  alt="Pranavi Chinthakayala" 
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
             </div>
           </div>
         </div>
