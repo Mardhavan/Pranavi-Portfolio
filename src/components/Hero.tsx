@@ -8,7 +8,7 @@ const Hero = () => {
     <section id="home" className="min-h-screen flex items-center justify-center px-4 md:px-8 lg:px-12 py-16 md:py-20 relative overflow-hidden">
       <FloatingParticles />
       <div className="w-full max-w-7xl relative z-10">
-        <div className="flex flex-col lg:flex-row gap-8 md:gap-12 items-center">
+        <div className="flex flex-col-reverse lg:flex-row gap-8 md:gap-12 items-center">
           {/* Text Content - Left Side */}
           <div className="flex-1 space-y-3 md:space-y-4 animate-in fade-in slide-in-from-bottom duration-700 text-center lg:text-left">
             <p className="text-sm md:text-base lg:text-lg" style={{ color: 'hsl(25, 95%, 53%)' }}>Hi, I'm</p>
