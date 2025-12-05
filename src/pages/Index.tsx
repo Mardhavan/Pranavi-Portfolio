@@ -18,7 +18,7 @@ const Index = () => {
   }
 
   return (
-    <div className="min-h-screen animate-fade-in">
+    <div className="min-h-screen">
       <ScrollProgress />
       <Navigation />
       <Hero />
