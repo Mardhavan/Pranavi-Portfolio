@@ -46,7 +46,7 @@ const Hero = () => {
           </div>
 
           {/* Profile Photo - Right Side */}
-          <div className="flex-shrink-0 animate-in fade-in slide-in-from-right duration-700 delay-300">
+          <div className="flex-shrink-0 mt-4 lg:mt-0 animate-in fade-in slide-in-from-right duration-700 delay-300">
             <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 xl:w-[420px] xl:h-[420px] animate-float">
               {/* Rotating gradient ring */}
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary via-accent to-secondary opacity-30 blur-2xl animate-glow-pulse" />
