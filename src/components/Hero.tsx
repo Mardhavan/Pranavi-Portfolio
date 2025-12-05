@@ -16,9 +16,6 @@ const Hero = () => {
               <span className="gradient-text font-extrabold">PRANAVI CHINTHAKAYALA</span>
             </h1>
             
-            <h2 className="text-lg md:text-xl lg:text-2xl xl:text-3xl text-foreground font-bold typing-animation inline-block">
-              Cloud & DevOps Engineer
-            </h2>
             <p className="text-sm md:text-base lg:text-lg text-muted-foreground leading-relaxed max-w-xl pt-2">
               Computer Science Graduate skilled in AWS Cloud, DevOps, Python, and SQL. 
               Hands-on experience in deploying scalable infrastructures using Terraform, Docker, and Kubernetes. 
