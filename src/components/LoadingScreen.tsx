@@ -24,11 +24,11 @@ const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
 
   return (
     <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-background">
-      {/* Animated Logo/Name */}
+      {/* Animated Icon */}
       <div className="relative mb-8">
-        <h1 className="text-4xl md:text-6xl font-bold gradient-text animate-pulse">
-          Pranavi
-        </h1>
+        <div className="w-16 h-16 rounded-full bg-gradient-to-r from-primary via-accent to-secondary animate-spin" style={{ animationDuration: '2s' }}>
+          <div className="absolute inset-1 rounded-full bg-background" />
+        </div>
         <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 via-accent/20 to-secondary/20 blur-2xl -z-10 animate-pulse" />
       </div>
 
