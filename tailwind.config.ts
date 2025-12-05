@@ -105,6 +105,13 @@ export default {
             "0%": { transform: "rotate(0deg)" },
             "100%": { transform: "rotate(360deg)" },
           },
+          particle: {
+            "0%": { transform: "translateY(0) rotate(0deg)", opacity: "0.2" },
+            "25%": { opacity: "0.4" },
+            "50%": { transform: "translateY(-30px) rotate(180deg)", opacity: "0.3" },
+            "75%": { opacity: "0.4" },
+            "100%": { transform: "translateY(0) rotate(360deg)", opacity: "0.2" },
+          },
         },
         animation: {
           "accordion-down": "accordion-down 0.2s ease-out",
@@ -113,6 +120,7 @@ export default {
           "gradient-shift": "gradient-shift 3s ease-in-out infinite",
           "glow-pulse": "glow-pulse 3s ease-in-out infinite",
           "rotate-slow": "rotate-slow 20s linear infinite",
+          particle: "particle ease-in-out infinite",
         },
     },
   },
