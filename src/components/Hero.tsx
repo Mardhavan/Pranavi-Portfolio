@@ -44,17 +44,24 @@ const Hero = () => {
 
           {/* Profile Photo - Right Side */}
           <div className="flex-shrink-0 animate-in fade-in slide-in-from-right duration-700 delay-300">
-            <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 xl:w-[420px] xl:h-[420px]">
-              {/* Outer glow ring */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 via-accent/10 to-secondary/20 blur-xl" />
-              {/* Border ring */}
-              <div className="absolute inset-0 rounded-full border-2 border-primary/30" />
+            <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 xl:w-[420px] xl:h-[420px] animate-float">
+              {/* Rotating gradient ring */}
+              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary via-accent to-secondary opacity-30 blur-2xl animate-glow-pulse" />
+              
+              {/* Outer decorative ring - rotating */}
+              <div className="absolute -inset-2 rounded-full border border-primary/20 animate-rotate-slow" />
+              
+              {/* Border ring with gradient */}
+              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/40 via-accent/30 to-secondary/40 p-[3px]">
+                <div className="w-full h-full rounded-full bg-background" />
+              </div>
+              
               {/* Photo container */}
-              <div className="absolute inset-2 rounded-full overflow-hidden border-4 border-primary/20">
+              <div className="absolute inset-2 rounded-full overflow-hidden border-2 border-primary/10 shadow-glow">
                 <img 
                   src={profilePhoto} 
                   alt="Pranavi Chinthakayala" 
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-110"
                 />
               </div>
             </div>
