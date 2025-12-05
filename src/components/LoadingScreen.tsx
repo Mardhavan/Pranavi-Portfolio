@@ -24,12 +24,39 @@ const LoadingScreen = ({ onLoadingComplete }: LoadingScreenProps) => {
 
   return (
     <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-background">
-      {/* Animated Icon */}
-      <div className="relative mb-8">
-        <div className="w-16 h-16 rounded-full bg-gradient-to-r from-primary via-accent to-secondary animate-spin" style={{ animationDuration: '2s' }}>
+      {/* Animated Loader */}
+      <div className="relative mb-8 w-24 h-24">
+        {/* Outer rotating ring */}
+        <div className="absolute inset-0 rounded-full border-4 border-transparent border-t-primary border-r-accent animate-spin" style={{ animationDuration: '1.5s' }} />
+        
+        {/* Middle pulsing ring */}
+        <div className="absolute inset-3 rounded-full border-4 border-transparent border-b-secondary border-l-primary animate-spin" style={{ animationDuration: '2s', animationDirection: 'reverse' }} />
+        
+        {/* Inner glowing core */}
+        <div className="absolute inset-6 rounded-full bg-gradient-to-br from-primary via-accent to-secondary animate-pulse">
           <div className="absolute inset-1 rounded-full bg-background" />
         </div>
-        <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 via-accent/20 to-secondary/20 blur-2xl -z-10 animate-pulse" />
+        
+        {/* Center dot */}
+        <div className="absolute inset-[42%] rounded-full bg-gradient-to-r from-primary to-accent animate-pulse" />
+        
+        {/* Orbiting dots */}
+        {[0, 1, 2].map((i) => (
+          <div
+            key={i}
+            className="absolute w-2 h-2 rounded-full bg-primary"
+            style={{
+              top: '50%',
+              left: '50%',
+              transform: `rotate(${i * 120}deg) translateX(40px) translateY(-50%)`,
+              animation: `spin 2s linear infinite`,
+              animationDelay: `${i * 0.2}s`,
+            }}
+          />
+        ))}
+        
+        {/* Background glow */}
+        <div className="absolute -inset-8 bg-gradient-to-r from-primary/20 via-accent/20 to-secondary/20 blur-3xl -z-10 animate-pulse" />
       </div>
 
       {/* Loading Bar */}
