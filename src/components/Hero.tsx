@@ -1,11 +1,23 @@
 import { ArrowRight, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import profilePhoto from "@/assets/profile-photo.png";
 
 const Hero = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center px-4 md:px-0 py-16 md:py-20 relative overflow-hidden">
       <div className="w-full max-w-full md:px-8 lg:px-12 relative z-10">
         <div className="flex flex-col gap-8 md:gap-12 items-center text-center">
+          {/* Profile Photo */}
+          <div className="animate-in fade-in slide-in-from-bottom duration-500">
+            <div className="relative w-40 h-40 md:w-52 md:h-52 rounded-full overflow-hidden border-4 border-primary/30 shadow-glow">
+              <img 
+                src={profilePhoto} 
+                alt="Pranavi Chinthakayala" 
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
+          </div>
+
           <div className="space-y-3 md:space-y-4 animate-in fade-in slide-in-from-bottom duration-700 w-full max-w-4xl">
             <p className="text-sm md:text-base lg:text-lg" style={{ color: 'hsl(25, 95%, 53%)' }}>Hi, I'm</p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold leading-tight">
